@@ -35,7 +35,7 @@
             </ul>
             <!-- Left links -->
             <div class="d-flex align-items-center">
-                <button type="button" class="btn btn-outline-success">
+                <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Login
                 </button>
             </div>
@@ -220,7 +220,45 @@
         </div>
     </div>
 </div>
-<!-- footer -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h5 class="modal-title w-100" id="exampleModalLabel">LOGIN HERE</h5>
+          <button type="button" class="close" data-bs-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputuser1">User Name</label>
+                  <input type="text" class="form-control" id="exampleInputuser1" placeholder="Enter user name">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="p" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <br>
+                <div class="row">
+                    <button type="submit" class="btn btn-success">Login</button>
+                </div>
+                <br>
+                <div class="text-center">
+                    <a href="#!" class="text-body">Forgot password?</a>
+                  </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+           <p  style="margin-right:210px;">Don't have an account?</p>
+           <button class="btn btn-outline-danger">Sign-Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-light text-muted">
     <!-- Section: Social media -->

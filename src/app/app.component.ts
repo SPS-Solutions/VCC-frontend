@@ -10,4 +10,12 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
   }
   title = 'VCC-frontend';
+  displayStyle = "none";
+  
+  openPopup() {
+    this.displayStyle = "block";
+  }
+  closePopup() {
+    this.displayStyle = "none";
+  }
 }
