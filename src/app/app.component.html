@@ -212,7 +212,7 @@
                 <label style="color: white" for="subject">Subject</label>
                 <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-                <input type="submit" value="Submit">
+                <button class="btn btn-dark" type="submit">Submit</button>
 
             </form>
             <br>
@@ -226,7 +226,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header text-center">
-          <h5 class="modal-title w-100" id="exampleModalLabel">LOGIN HERE</h5>
+          <h2 class="modal-title w-100" id="exampleModalLabel">LOGIN HERE</h2>
           <button type="button" class="close" data-bs-dismiss="modal">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -239,25 +239,66 @@
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Password</label>
-                  <input type="p" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  <input type="password " class="form-control" id="exampleInputPassword1" placeholder="Password">
                 </div>
-                <br>
+                &nbsp;
+                <div class="row">
+                    <a href="#!" class="text-body">Forgot password?</a>
+                  </div>
+                  &nbsp;
                 <div class="row">
                     <button type="submit" class="btn btn-success">Login</button>
                 </div>
-                <br>
-                <div class="text-center">
-                    <a href="#!" class="text-body">Forgot password?</a>
-                  </div>
               </form>
         </div>
         <div class="modal-footer">
            <p  style="margin-right:210px;">Don't have an account?</p>
-           <button class="btn btn-outline-danger">Sign-Up</button>
+           <button class="btn btn-outline-dark" data-bs-target="#exampleModal2" data-bs-toggle="modal">Sign-Up</button>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Register -->
+  <div class="modal fade" id="exampleModal2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h2 class="modal-title w-100" id="exampleModalLabel">REGISTER HERE</h2>
+          <button type="button" class="close" data-bs-dismiss="modal">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form action="action_page.php">
+                <div class="container">
+                  <p>Please fill in this form to create an account.</p>
+                  <label for="user"><b>User Name</b></label>
+                  <input type="text" placeholder="Enter Name" name="email" id="user" required>
+
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" id="email" required>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+              
+                  <label for="psw-repeat"><b>Confirm Password</b></label>
+                  <input type="password" placeholder="Confirm Password" name="psw-repeat" id="psw-repeat" required>
+                  <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                  <button type="submit" class="registerbtn">Register</button>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <div class="container signin">
+              <p>Already have an account?&nbsp;<button type="button" class="btn btn-outline-dark" data-bs-target="#exampleModal" data-bs-toggle="modal">Login</button></p>
+            </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-light text-muted">
@@ -320,7 +361,7 @@
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                     <!-- Content -->
                     <h6 class="text-uppercase fw-bold mb-4">
-                        <i class="fas fa-gem me-3"></i>Company name
+                        <i class="fas fa-gem me-3"></i>VCC-POINT
                     </h6>
                     <p>
                         Here you can use rows and columns to organize your footer content. Lorem ipsum
@@ -333,19 +374,19 @@
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                     <!-- Links -->
                     <h6 class="text-uppercase fw-bold mb-4">
-                        Products
+                        Courses
                     </h6>
                     <p>
-                        <a href="#!" class="text-reset">Angular</a>
+                        <a href="#!" class="text-reset">Physics</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-reset">React</a>
+                        <a href="#!" class="text-reset">Maths</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-reset">Vue</a>
+                        <a href="#!" class="text-reset">Chemistry</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-reset">Laravel</a>
+                        <a href="#!" class="text-reset">Social Science</a>
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -357,7 +398,7 @@
                         Useful links
                     </h6>
                     <p>
-                        <a href="#!" class="text-reset">Home</a>
+                        <a href="#carouselExampleIndicators" class="text-reset">Home</a>
                     </p>
                     <p>
                         <a href="#!" class="text-reset">About us</a>
@@ -366,10 +407,10 @@
                         <a href="#!" class="text-reset">Courses</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-reset">Gallery</a>
+                        <a href="#gallery" class="text-reset">Gallery</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-reset">Contact Us</a>
+                        <a href="#contact" class="text-reset">Contact Us</a>
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -384,7 +425,7 @@
                                 d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
                             <path fill-rule="evenodd"
                                 d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
-                        </svg> New York, NY 10012, US</p>
+                        </svg>New York, NY 10012, US</p>
                     <p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-envelope" viewBox="0 0 16 16">
