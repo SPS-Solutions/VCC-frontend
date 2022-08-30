@@ -18,7 +18,19 @@ input[type=text], select, textarea {
     border-radius: 4px;
     cursor: pointer;
   }
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
   
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
   /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
     background-color: #45a049;
@@ -108,33 +120,17 @@ input[type=text], select, textarea {
     font-size: 3rem;
 }
 
-/* .about{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-} */
-
-/* .about .image{
-    flex:1 1 40rem;
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
 }
 
-.about .image img{
-    height:65vh;
-    width:100%;
+.registerbtn:hover {
+  opacity:1;
 }
-
-.about .content{
-    flex:1 1 40rem;
-}
-
-.about .content h3{
-    font-size: 3.5rem;
-    color:#666;
-}
-
-.about .content p{
-    font-size: 1.5rem;
-    color:#666;
-    padding:1rem 0;
-} */
