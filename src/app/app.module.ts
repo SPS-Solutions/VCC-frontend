@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { AdminComponent } from './admin/admin.component';
 import { FacultyComponent } from './faculty/faculty.component';
 import { StudentComponent } from './student/student.component';
+import { LandingComponent } from './landing/landing.component';
 
 
 
@@ -14,6 +15,7 @@ import { StudentComponent } from './student/student.component';
     AdminComponent,
     FacultyComponent,
     StudentComponent,
+    LandingComponent,
   ],
   imports: [
     BrowserModule,
