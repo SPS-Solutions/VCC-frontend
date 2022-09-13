@@ -1,16 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {LandingComponent} from './landing/landing.component'
+
+
+
 const routes: Routes = [
-  {
-    path:'',
-    redirectTo:'landing',
-    pathMatch:'full'
-  },
-  {
-    path:'',
-    component: LandingComponent,
-  }
+{
+  path:"",
+  redirectTo:"landing",
+  pathMatch:"full",
+}
+// {
+//   path:"user",
+//   loadChildren: () => 
+//   import("./user/user.module").then(m => m.UserModule) 
+// }
 ];
 
 @NgModule({

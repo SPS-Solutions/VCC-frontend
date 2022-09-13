@@ -35,10 +35,9 @@
             </ul>
             <!-- Left links -->
             <div class="d-flex align-items-center">
-                <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                <a routerLink="/user/login" type="button" class="btn btn-outline-success" data-bs-toggle="modal"
                     data-bs-target="#exampleModal">
-                    Login
-                </button>
+                    Login</a>
             </div>
         </div>
         <!-- Collapsible wrapper -->
@@ -127,7 +126,7 @@
 
 <section class="course" id="course">
 
-    <h1 class="heading">our popular courses</h1>
+    <h1 class="heading">Courses Offered By</h1>
 
     <div class="box-container">
 
@@ -214,7 +213,7 @@
                 <div class="info">
                     <h3> <i class="far fa-clock"></i> 2 hours </h3>
                     <h3> <i class="far fa-calendar-alt"></i> 6 months </h3>
-                    <h3> <i class="fas fa-book"></i> 12 modules </h3>
+                    <h3> <i class="fas fa-book"></i> 11 modules </h3>
                 </div>
             </div>
         </div>
@@ -276,7 +275,7 @@
     <div class="row" id="about">
         <div class="col-sm-6">
             <div class="img-fluid">
-                <img src="assets\images\Studying-cuate.jpg" alt="">
+                <img class="img-fluid" src="assets\images\Studying-cuate.jpg" alt="">
 
             </div>
         </div>
@@ -340,6 +339,44 @@
 </div>
 <br>
 <!-- Contact Us -->
+<!-- LOGIN -->
+<div class="modal fade" id="exampleModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h2 class="modal-title w-100" id="exampleModalLabel">LOGIN HERE</h2>
+                <button type="button" class="close" data-bs-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputuser1">User Name</label>
+                        <input type="text" class="form-control" id="exampleInputuser1" placeholder="Enter user name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password " class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    &nbsp;
+                    <div class="row">
+                        <a href="#!" class="text-body">Forgot password?</a>
+                    </div>
+                    &nbsp;
+                    <div class="row">
+                        <button type="submit" class="btn btn-success">Login</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <p style="margin-right:210px;">Don't have an account?</p>
+                <a routerLink="/User/register" class="btn btn-outline-dark" data-bs-target="#exampleModal2"
+                        data-bs-toggle="modal">Sign-Up</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="row" id="contact"
     style="width: 100%; height: auto; background-size: cover; background-image: url(../assets/images/College-Student-Health-1300x500.png)">
@@ -394,45 +431,6 @@
             </form>
             <br>
             <br>
-        </div>
-    </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header text-center">
-                <h2 class="modal-title w-100" id="exampleModalLabel">LOGIN HERE</h2>
-                <button type="button" class="close" data-bs-dismiss="modal">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <label for="exampleInputuser1">User Name</label>
-                        <input type="text" class="form-control" id="exampleInputuser1" placeholder="Enter user name">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password " class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    &nbsp;
-                    <div class="row">
-                        <a href="#!" class="text-body">Forgot password?</a>
-                    </div>
-                    &nbsp;
-                    <div class="row">
-                        <button type="submit" class="btn btn-success">Login</button>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <p style="margin-right:210px;">Don't have an account?</p>
-                <button class="btn btn-outline-dark" data-bs-target="#exampleModal2"
-                    data-bs-toggle="modal">Sign-Up</button>
-            </div>
         </div>
     </div>
 </div>
