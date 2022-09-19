@@ -1,50 +1,3 @@
-<!-- Navbar -->
-<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-    <!-- Container wrapper -->
-    <div class="container">
-        <!-- Navbar brand -->
-        <a class="navbar-brand mb-0 h1">
-            <img src="https://scontent.famd6-1.fna.fbcdn.net/v/t1.18169-9/17634309_1830506077215932_5971006511660422793_n.png?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=bN1-zVbqrcAAX_zIAYv&_nc_ht=scontent.famd6-1.fna&oh=00_AT8UFmPiroYNBIJQcVd9H5WV6GuwJP4_1ZLIthJI2dkGXA&oe=631E1AC0"
-                width="30" height="30" alt="">
-            VCC POINT
-        </a>
-        <!-- Toggle button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarButtonsExample"
-            aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Collapsible wrapper -->
-        <div class="collapse navbar-collapse" id="navbarButtonsExample">
-            <!-- Left links -->
-            <ul class="navbar-nav ms-auto mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>&nbsp;
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About Us</a>
-                </li>&nbsp;
-                <li class="nav-item">
-                    <a class="nav-link" href="#course">Courses</a>
-                </li>&nbsp;
-                <li class="nav-item">
-                    <a class="nav-link" href="#gallery">Gallery</a>
-                </li>&nbsp;
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact Us</a>
-                </li>&nbsp;&nbsp;
-            </ul>
-            <!-- Left links -->
-            <div class="d-flex align-items-center">
-                <a routerLink="/user/login" type="button" class="btn btn-outline-success" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
-                    Login</a>
-            </div>
-        </div>
-        <!-- Collapsible wrapper -->
-    </div>
-    <!-- Container wrapper -->
-</nav>
-<!-- Navbar -->
 <!-- Carousel -->
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
     <div class="carousel-indicators">
@@ -339,45 +292,6 @@
 </div>
 <br>
 <!-- Contact Us -->
-<!-- LOGIN -->
-<div class="modal fade" id="exampleModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header text-center">
-                <h2 class="modal-title w-100" id="exampleModalLabel">LOGIN HERE</h2>
-                <button type="button" class="close" data-bs-dismiss="modal">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <label for="exampleInputuser1">User Name</label>
-                        <input type="text" class="form-control" id="exampleInputuser1" placeholder="Enter user name">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password " class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    &nbsp;
-                    <div class="row">
-                        <a href="#!" class="text-body">Forgot password?</a>
-                    </div>
-                    &nbsp;
-                    <div class="row">
-                        <button type="submit" class="btn btn-success">Login</button>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <p style="margin-right:210px;">Don't have an account?</p>
-                <a routerLink="/User/register" class="btn btn-outline-dark" data-bs-target="#exampleModal2"
-                        data-bs-toggle="modal">Sign-Up</a>
-            </div>
-        </div>
-    </div>
-</div>
-
 <div class="row" id="contact"
     style="width: 100%; height: auto; background-size: cover; background-image: url(../assets/images/College-Student-Health-1300x500.png)">
     <div class="col-sm-6">
@@ -436,46 +350,7 @@
 </div>
 
 <!-- Register -->
-<div class="modal fade" id="exampleModal2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header text-center">
-                <h2 class="modal-title w-100" id="exampleModalLabel">REGISTER HERE</h2>
-                <button type="button" class="close" data-bs-dismiss="modal">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form action="action_page.php">
-                    <div class="container">
-                        <p>Please fill in this form to create an account.</p>
-                        <label for="user"><b>User Name</b></label>
-                        <input type="text" placeholder="Enter Name" name="email" id="user" required>
 
-                        <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Enter Email" name="email" id="email" required>
-
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-
-                        <label for="psw-repeat"><b>Confirm Password</b></label>
-                        <input type="password" placeholder="Confirm Password" name="psw-repeat" id="psw-repeat"
-                            required>
-                        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-                        <button type="submit" class="registerbtn">Register</button>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <div class="container signin">
-                    <p>Already have an account?&nbsp;<button type="button" class="btn btn-outline-dark"
-                            data-bs-target="#exampleModal" data-bs-toggle="modal">Login</button></p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
 
 
 <!-- Footer -->
