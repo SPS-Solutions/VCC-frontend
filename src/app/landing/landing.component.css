@@ -134,3 +134,18 @@ input[type=text], select, textarea {
 .registerbtn:hover {
   opacity:1;
 }
+
+.course{
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-img-top{
+  height: 300px;
+  width: 287px;
+}
+
+.img-fluid-1{
+  height: 345px;
+  width: 600px;
+}
