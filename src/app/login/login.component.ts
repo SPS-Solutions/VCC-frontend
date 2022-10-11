@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { HeaderService } from '../header/header.service';
 import { LoginService } from './login.service';
 
 @Component({
@@ -10,13 +11,14 @@ import { LoginService } from './login.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private loginService: LoginService, private router: Router ) { }
+  constructor(private loginService: LoginService, private router: Router,public header:HeaderService ) { }
 
   loginForm = new FormGroup({
     email: new FormControl("",[Validators.required]),
     password: new FormControl("",[Validators.required]),
   })
   ngOnInit(): void {
+    this.header.hide();
   }
 
   userLogin(){
@@ -25,7 +27,7 @@ export class LoginComponent implements OnInit {
         console.log(res);
         localStorage.setItem("token",res.token);
         this.loginForm.reset();
-        this.router.navigate(["/student"]);
+        this.router.navigate(["/faculty"]);
         alert("Login Successfull !!");
       },
       err=> {
