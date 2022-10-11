@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { HeaderService } from '../header/header.service';
 import { RegisterService } from './register.service';
 
 @Component({
@@ -17,9 +18,10 @@ export class RegisterComponent implements OnInit {
     cpassword: new FormControl("",[Validators.required]),
   })
 
-  constructor(private registerServ: RegisterService, private router: Router) { }
+  constructor(private registerServ: RegisterService, private router: Router, public header:HeaderService) { }
 
   ngOnInit(): void {
+    this.header.hide();
   }
 
   userRegister(){
