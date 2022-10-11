@@ -144,3 +144,8 @@ input[type=text], select, textarea {
   height: 300px;
   width: 287px;
 }
+
+.img-fluid-1{
+  height: 345px;
+  width: 600px;
+}
