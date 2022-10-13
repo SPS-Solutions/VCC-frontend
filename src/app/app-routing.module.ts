@@ -2,10 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {LandingComponent} from './landing/landing.component'
 import { LoginComponent } from './login/login.component';
-import { AdminDashboardComponent } from './modules/admin/components/admin-dashboard/admin-dashboard.component';
 import { RegisterComponent } from './register/register.component';
-import { StudentComponent } from './student/student.component';
-
 
 
 const routes: Routes = [
@@ -23,10 +20,6 @@ const routes: Routes = [
       component:RegisterComponent
     },
     {
-      path:'student',
-      component:StudentComponent
-    },
-    {
       path:'',
       redirectTo:'landing',
       pathMatch:'full',
@@ -37,7 +30,11 @@ const routes: Routes = [
     },
     {
       path:'admin',
-      component:AdminDashboardComponent
+      loadChildren: () => import('./modules/admin/admin.module').then((m)=>m.AdminModule),
+    },
+    {
+      path:'student',
+      loadChildren: () => import('./modules/student/student.module').then((m)=>m.StudentModule),
     },
     {
       path:'**',

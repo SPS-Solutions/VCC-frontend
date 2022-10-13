@@ -1,10 +1,73 @@
 <div class="container-fluid">
-    <div class="row" style="background-color: lightblue">
-      <hr>
-      <h1 style="font-style:oblique;">LEAVE APPLICATION</h1>
-    </div>
-    <br>
-    <div class="row">
-      
+  <div class="row" style="background-color: lightblue">
+    <hr>
+    <h1 style="font-style:oblique;">LEAVE APPLICATION</h1>
+  </div>
+  <br>
+  <div class="row">
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <form>
+            <div class="row">
+              <div class="form-group col-md-4 mb-3">
+                <label for="inputfirst">First Name</label>
+                <input type="text" class="form-control" placeholder="First name" id="inputfirst">
+              </div>
+              <div class="form-group col-md-4 mb-3">
+                <label for="inputlast">Last Name</label>
+                <input type="text" class="form-control" placeholder="Last name" id="inputlast">
+              </div>
+              <div class="form-group col-md-4 mb-3">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" placeholder="Enter your email" id="inputEmail4">
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Phone Number</label>
+                <input type="tel" class="form-control" placeholder="Enter your phone" id="inputPassword4">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputday">No. of Days</label>
+                <input type="number" class="form-control" placeholder="Enter no. of days" id="inputday">
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label for="startdate">Start Date</label>
+                <input type="date" class="form-control" id="startdate">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="enddate">End Date</label>
+                <input type="date" class="form-control" id="enddate">
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">Reason For Leave</label>
+                <textarea style="height: 90px" type="text" class="form-control" id="inputCity"></textarea>
+              </div>
+              <br>
+              <div class="form-group col-md-4">
+                <label for="inputState">Leave Type</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>Annual</option>
+                  <option>Emergency</option>
+                  <option>Functional</option>
+                  <option>Medical</option>
+                </select>
+              </div>
+            </div>
+            <br>
+              <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
+</div>

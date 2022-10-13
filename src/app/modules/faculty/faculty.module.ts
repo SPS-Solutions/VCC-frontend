@@ -16,7 +16,10 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { MatTableModule } from '@angular/material/table' 
+import { MatTableModule } from '@angular/material/table';
+import { PresentationsComponent } from './components/presentations/presentations.component';
+import { FacVideosComponent } from './components/fac-videos/fac-videos.component';
+import { PapersComponent } from './components/papers/papers.component' 
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { MatTableModule } from '@angular/material/table'
     MaterialsComponent,
     LeaveappComponent,
     TimetableComponent,
-    NavbarComponent
+    NavbarComponent,
+    PresentationsComponent,
+    FacVideosComponent,
+    PapersComponent
   ],
   imports: [
     CommonModule,
